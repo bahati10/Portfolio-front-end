@@ -1,20 +1,11 @@
-import { Button, Typography } from "@mui/material";
+import React from "react";
 
 const Navbar = () => {
   return (
     <>
-      <Button>
-        <Typography>Button 1</Typography>
-      </Button>
-      <Button>
-        <Typography>Button 1</Typography>
-      </Button>
-      <Button>
-        <Typography>Button 1</Typography>
-      </Button>
-      <Button>
-        <Typography>Button 1</Typography>
-      </Button>
+      <div>
+        <button>Button 1</button>
+      </div>
     </>
   );
 };
