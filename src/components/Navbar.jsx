@@ -3,7 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div></div>
+      <div>
+        <button>Button 1</button>
+      </div>
     </>
   );
 };
