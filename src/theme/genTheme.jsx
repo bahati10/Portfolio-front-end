@@ -15,8 +15,17 @@ const genTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Righteous",
-    fontWeightLight: 700,
+    h5: {
+      fontFamily: "Righteous",
+      color: "#000D11",
+    },
+    h6: {
+      fontFamily: "Poppins",
+      color: "#000D11",
+      fontSize: 13,
+      fontWeight: 550,
+      wordSpacing: 4,
+    },
   },
 });
 
