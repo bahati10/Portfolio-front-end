@@ -22,8 +22,8 @@ const genTheme = createTheme({
     h6: {
       fontFamily: "Poppins",
       color: "#000D11",
-      fontSize: 13,
-      fontWeight: 550,
+      fontSize: 14.5,
+      fontWeight: 600,
       wordSpacing: 4,
     },
   },
