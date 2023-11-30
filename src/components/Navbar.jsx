@@ -12,7 +12,7 @@ import {
 import { makeStyles } from "@mui/styles";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import MenuIcon from "@mui/icons-material/Menu";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    "&:not(:last-child)": {
       flex: 1,
     },
     "&:hover": {
@@ -73,7 +72,7 @@ const Navbar = () => {
 
   const handleDrawerClose = () => {
     setDrawerOpen(false);
-  };
+
 
   const handleLightModeClick = () => {
     setLightMode(!isLightMode);
@@ -102,7 +101,6 @@ const Navbar = () => {
             <Button
               className={classes.button}
               color="inherit"
-              sx={{ borderRadius: 5, paddingLeft: "1px", paddingRight: "1px" }}
             >
               <Typography variant="h6" style={{ textTransform: "none" }}>
                 About
@@ -112,7 +110,6 @@ const Navbar = () => {
               size="large"
               className={classes.button}
               color="inherit"
-              sx={{ borderRadius: 5, paddingLeft: "1px", paddingRight: "1px" }}
             >
               <Typography variant="h6" style={{ textTransform: "none" }}>
                 Skills
@@ -121,7 +118,6 @@ const Navbar = () => {
             <Button
               className={classes.button}
               color="inherit"
-              sx={{ borderRadius: 5, paddingLeft: "1px", paddingRight: "1px" }}
             >
               <Typography variant="h6" style={{ textTransform: "none" }}>
                 Work
@@ -136,8 +132,6 @@ const Navbar = () => {
               <Typography variant="h6" style={{ textTransform: "none" }}>
                 Blog
               </Typography>
-            </Button>
-            <Button size="large" color="inherit" onClick={handleLightModeClick}>
               <Typography variant="h6" style={{ textTransform: "none" }}>
                 <LightModeIcon
                   sx={{
@@ -145,14 +139,11 @@ const Navbar = () => {
                     p: 6,
                     fontSize: "2rem",
                     border: 1,
-                    borderRadius: "100%",
                   }}
                 />
               </Typography>
             </Button>
           </div>
-        </Toolbar>
-
         <Drawer
           className={classes.drawer}
           variant="temporary"
@@ -311,7 +302,6 @@ const Navbar = () => {
               </Button>
             </ListItem>
           </List>
-        </Drawer>
       </AppBar>
     </div>
   );
