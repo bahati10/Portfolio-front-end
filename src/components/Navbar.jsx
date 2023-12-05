@@ -54,6 +54,20 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  listbutton: {
+    width: "100%",
+    height: "40px",
+  },
+  hideOnLargerScreens: {
+    [theme.breakpoints.up("700")]: {
+      display: "none",
+    },
+  },
+  hideOnSmallerScreens: {
+    [theme.breakpoints.down("700")]: {
+      display: "none",
+    },
+  },
 }));
 
 const Navbar = () => {
