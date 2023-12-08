@@ -4,9 +4,10 @@ export default function RootLayout(props) {
   const { children } = props;
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <ThemeRegistry options={{ key: 'mui' }}>
-          {children}</ThemeRegistry>
+          {children}
+        </ThemeRegistry>
       </body>
     </html>
   );
