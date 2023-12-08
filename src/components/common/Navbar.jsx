@@ -15,6 +15,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import React from "react";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   drawerPaper: {
@@ -75,10 +76,8 @@ const Navbar = () => {
         position="static"
         sx={{
           backgroundColor: "#F3F4FC",
-          border: 4,
           display: "flex",
           justifyContent: "center",
-          height: "5rem",
         }}
         elevation={0}
       >
@@ -109,7 +108,15 @@ const Navbar = () => {
                 }}
               >
                 <Typography variant="h6" style={{ textTransform: "none" }}>
-                  About
+                  <Link
+                    href="/about"
+                    style={{
+                      textDecoration: "none",
+                      color: "#000D11",
+                    }}
+                  >
+                    About
+                  </Link>
                 </Typography>
               </Button>
               <Button
@@ -128,7 +135,15 @@ const Navbar = () => {
                 }}
               >
                 <Typography variant="h6" style={{ textTransform: "none" }}>
-                  Skills
+                  <Link
+                    href="/skills"
+                    style={{
+                      textDecoration: "none",
+                      color: "#000D11",
+                    }}
+                  >
+                    Skills
+                  </Link>
                 </Typography>
               </Button>
               <Button
@@ -146,7 +161,15 @@ const Navbar = () => {
                 }}
               >
                 <Typography variant="h6" style={{ textTransform: "none" }}>
-                  Work
+                  <Link
+                    href="/work"
+                    style={{
+                      textDecoration: "none",
+                      color: "#000D11",
+                    }}
+                  >
+                    Work
+                  </Link>
                 </Typography>
               </Button>
               <Button
@@ -165,7 +188,15 @@ const Navbar = () => {
                 }}
               >
                 <Typography variant="h6" style={{ textTransform: "none" }}>
-                  Blog
+                  <Link
+                    href="/Blog"
+                    style={{
+                      textDecoration: "none",
+                      color: "#000D11",
+                    }}
+                  >
+                    Blog
+                  </Link>
                 </Typography>
               </Button>
               <span
