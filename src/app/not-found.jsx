@@ -25,7 +25,7 @@ const Notfound = () => {
             fontSize: "5rem",
           }}
         >
-          404
+          4<span style={{ color: "green" }}>0</span>4
         </Typography>
         <Typography
           variant="h6"
