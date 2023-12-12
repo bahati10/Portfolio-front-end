@@ -1,7 +1,8 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import empty from "../../constants/empty.jpg";
 
 const News = () => {
-  return <Typography>Home</Typography>;
+  return <></>;
 };
 
 export default News;

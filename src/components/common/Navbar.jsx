@@ -66,10 +66,15 @@ const Navbar = () => {
     <div
       style={{
         flexGrow: 1,
-        backgroundColor: "#F3F4FC",
-        weight: "100vw",
-        height: "100vh",
+        weight: "100px",
+        height: "100px",
         margin: 5,
+        position: "fixed",
+        width: "100%",
+        top: 0,
+        right: 0,
+        zIndex: 1100,
+        opacity: 1,
       }}
     >
       <AppBar
@@ -78,6 +83,8 @@ const Navbar = () => {
           backgroundColor: "#F3F4FC",
           display: "flex",
           justifyContent: "center",
+          backgroundColor: "transparent",
+          backdropFilter: "blur(3px)",
         }}
         elevation={0}
       >
