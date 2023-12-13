@@ -1,4 +1,4 @@
-import Not from "@/components/common/Notfound";
+import Not from "@/components/Notfound/Notfound";
 
 const Notfound = () => {
   return <Not statusCode={404} />;

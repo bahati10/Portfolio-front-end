@@ -1,8 +1,7 @@
-import { Button, Typography } from "@mui/material";
-import empty from "../../constants/empty.jpg";
+import Landing from "@/components/landing/landing";
 
 const News = () => {
-  return <></>;
+  return <Landing />;
 };
 
 export default News;
