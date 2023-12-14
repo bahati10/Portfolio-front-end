@@ -87,14 +87,21 @@ const Navbar = () => {
         elevation={0}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h5"
-            sx={{
-              fontSize: "clamp(20px, 4vw, 26px)",
+          <Link
+            href="/"
+            style={{
+              textDecoration: "none",
             }}
           >
-            .bahati
-          </Typography>
+            <Typography
+              variant="h5"
+              sx={{
+                fontSize: "clamp(20px, 4vw, 26px)",
+              }}
+            >
+              .bahati
+            </Typography>
+          </Link>
           <Hidden mdUp>
             <MenuIcon
               sx={{
