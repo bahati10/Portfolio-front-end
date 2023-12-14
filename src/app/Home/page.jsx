@@ -1,4 +1,4 @@
-import Landing from "@/components/landing/landing";
+import Landing from "@/components/landing/landing/landing";
 
 const News = () => {
   return <Landing />;

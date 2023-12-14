@@ -1,22 +1,10 @@
-import Navbar from "@/components/common/Navbar"
-import { Button } from "@mui/base"
-import { Typography } from "@mui/material"
+import Landing from "@/components/landing/landing/landing"
 
 
 export default function Home() {
   return (
     <>
-    <Button>
-      <Typography>Home</Typography>
-    </Button>
-
-    <Button>
-      <Typography>Home</Typography>
-    </Button>
-
-    <Button>
-      <Typography>Home</Typography>
-    </Button>
+    <Landing />
     </>
   )
 }

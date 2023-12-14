@@ -1,21 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Drawer,
-  List,
-  ListItem,
-  Hidden,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Hidden } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import React from "react";
 import Link from "next/link";
+import NavDrawer from "./drawer";
 
 const useStyles = makeStyles((theme) => ({
   drawerPaper: {
@@ -28,11 +20,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   listbutton: {
+    marginTop: "2px",
     width: "100%",
-    height: "40px",
+    height: "45px",
+    fontSize: "30px",
     "&:hover": {
       backgroundColor: "#EBECEC",
     },
+  },
+  lists: {
+    fontSize: 17,
+    textTransform: "none",
   },
 }));
 
@@ -89,9 +87,21 @@ const Navbar = () => {
         elevation={0}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography variant="h5">.bahati</Typography>
+          <Typography
+            variant="h5"
+            sx={{
+              fontSize: "clamp(20px, 4vw, 26px)",
+            }}
+          >
+            .bahati
+          </Typography>
           <Hidden mdUp>
-            <MenuIcon onClick={handleDrawerOpen}></MenuIcon>
+            <MenuIcon
+              sx={{
+                fontSize: "clamp(25px, 4vw, 26px)",
+              }}
+              onClick={handleDrawerOpen}
+            ></MenuIcon>
           </Hidden>
           <Hidden mdDown>
             <div
@@ -243,144 +253,7 @@ const Navbar = () => {
           </Hidden>
         </Toolbar>
 
-        <Drawer
-          className={classes.drawer}
-          variant="temporary"
-          anchor="left"
-          open={drawerOpen}
-          onClose={handleDrawerClose}
-          classes={{
-            paper: classes.drawerPaper,
-          }}
-        >
-          <List>
-            <ListItem onClick={handleDrawerClose}>
-              <Button
-                variant="outlined"
-                className={classes.listbutton}
-                color="inherit"
-                size="medium"
-                sx={{
-                  marginTop: -1,
-                  borderRadius: 5,
-                  border: "none",
-                  boxShadow: "none",
-                }}
-              >
-                <Typography variant="h6" style={{ textTransform: "none" }}>
-                  About
-                </Typography>
-              </Button>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <Button
-                variant="outlined"
-                className={classes.listbutton}
-                color="inherit"
-                size="medium"
-                sx={{
-                  marginTop: -1,
-                  borderRadius: 5,
-                  border: "none",
-                  boxShadow: "none",
-                }}
-              >
-                <Typography variant="h6" style={{ textTransform: "none" }}>
-                  Skills
-                </Typography>
-              </Button>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <Button
-                variant="outlined"
-                className={classes.listbutton}
-                size="medium"
-                color="inherit"
-                elevation={8}
-                sx={{
-                  marginTop: -1,
-                  borderRadius: 5,
-                  border: "none",
-                  boxShadow: "none",
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  style={{ textTransform: "none" }}
-                  sx={{
-                    m: 1,
-                    justifyContent: "flex-start",
-                  }}
-                >
-                  Work
-                </Typography>
-              </Button>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <Button
-                variant="outlined"
-                className={classes.listbutton}
-                size="medium"
-                color="inherit"
-                elevation={8}
-                sx={{
-                  marginTop: -1,
-                  display: "flex",
-                  alignItems: "center",
-                  borderRadius: 5,
-                  border: "none",
-                  boxShadow: "none",
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  style={{ textTransform: "none" }}
-                  sx={{
-                    m: 1,
-                    justifyContent: "flex-start",
-                  }}
-                >
-                  Blog
-                </Typography>
-              </Button>
-            </ListItem>
-            <ListItem onClick={handleDrawerClose}>
-              <Button
-                className={classes.listbutton}
-                color="inherit"
-                size="medium"
-                variant="outlined"
-                onClick={handleLightModeClick}
-                sx={{
-                  marginTop: -1,
-                  borderRadius: 5,
-                  border: "none",
-                  boxShadow: "none",
-                }}
-              >
-                <Typography variant="h6" style={{ textTransform: "none" }}>
-                  {isLightMode ? (
-                    <LightModeIcon
-                      sx={{
-                        "&:hover": {
-                          backgroundColor: "#EBECEC",
-                        },
-                      }}
-                    />
-                  ) : (
-                    <DarkModeOutlinedIcon
-                      sx={{
-                        "&:hover": {
-                          backgroundColor: "#EBECEC",
-                        },
-                      }}
-                    />
-                  )}
-                </Typography>
-              </Button>
-            </ListItem>
-          </List>
-        </Drawer>
+        <NavDrawer open={drawerOpen} onClose={handleDrawerClose} />
       </AppBar>
     </div>
   );

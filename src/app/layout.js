@@ -1,4 +1,4 @@
-import Navbar from "@/components/common/Navbar";
+import Navbar from "@/components/common/navbar/Navbar";
 import ThemeRegistry from "@/components/theme/ThemeRegistry";
 
 export default function RootLayout(props) {

@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import Image from "next/image";
-import Bottom from "./bottom";
+import Bottom from "../bottom/bottom";
+import ProfileImage from "../profile/profileimage";
 
 const Landing = () => {
   return (
@@ -15,31 +15,22 @@ const Landing = () => {
     >
       <Box
         sx={{
-          border: 4,
+          border: 3,
           width: "100%",
           height: "100%",
-          maxWidth: "150px",
-          maxHeight: "150px",
+          maxWidth: "140px",
+          maxHeight: "140px",
           textAlign: "center",
           position: "relative",
           borderRadius: "100%",
           overflow: "hidden",
           "@media (max-width: 600px)": {
-            maxWidth: "200px",
-            maxHeight: "200px",
+            maxWidth: "150px",
+            maxHeight: "150px",
           },
-          //   "@media (min-width: 960px)": {
-          //     maxWidth: "200px",
-          //     maxHeight: "200px",
-          //   },
         }}
       >
-        <Image
-          src="/tiny.png"
-          alt="Description of the image"
-          layout="fill"
-          objectFit="cover"
-        />
+        <ProfileImage />
       </Box>
       <Bottom />
     </div>
