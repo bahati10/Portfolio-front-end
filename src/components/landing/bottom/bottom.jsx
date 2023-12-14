@@ -1,4 +1,5 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
+import PlatformIcons from "./platform";
 
 const Bottom = () => {
   return (
@@ -10,9 +11,11 @@ const Bottom = () => {
       <Typography
         variant="h6"
         sx={{
-          fontSize: 26,
+          fontSize: "clamp(20px, 4vw, 26px)",
           letterSpacing: "-0.6px",
+          marginTop: "10px",
           marginBottom: "-5px",
+          fontWeight: "semibold",
         }}
       >
         Hello, 👋🏾
@@ -21,14 +24,15 @@ const Bottom = () => {
         variant="h6"
         sx={{
           letterSpacing: "-0.6px",
-          fontSize: 26,
+          fontSize: "clamp(20px, 4vw, 26px)",
           marginBottom: "-5px",
+          fontWeight: "semibold",
         }}
       >
         I&#39;m{" "}
         <span
           style={{
-            fontSize: 26,
+            fontSize: "clamp(20px, 4vw, 26px)",
             color: "#039BBD",
           }}
         >
@@ -39,30 +43,16 @@ const Bottom = () => {
       <Typography
         variant="h6"
         sx={{
+          fontSize: "clamp(20px, 4vw, 26px)",
           letterSpacing: "-0.6px",
-          fontSize: 24,
+          fontWeight: "semibold",
+          marginBottom: "7px",
         }}
       >
         Software Developer{" "}
       </Typography>
       <br />
-      <Button
-        variant="outlined"
-        disableRipple={true}
-        sx={{
-          fontSize: 12,
-          color: "#000D11",
-          border: 2,
-          borderRadius: 20,
-          width: 100,
-          height: 40,
-          "&:hover": {
-            border: 2,
-          },
-        }}
-      >
-        <Typography variant="h6">RESUME</Typography>
-      </Button>
+      <PlatformIcons />
     </div>
   );
 };

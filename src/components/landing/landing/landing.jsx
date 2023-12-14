@@ -25,8 +25,8 @@ const Landing = () => {
           borderRadius: "100%",
           overflow: "hidden",
           "@media (max-width: 600px)": {
-            maxWidth: "200px",
-            maxHeight: "200px",
+            maxWidth: "150px",
+            maxHeight: "150px",
           },
         }}
       >
