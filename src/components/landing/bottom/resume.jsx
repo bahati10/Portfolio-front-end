@@ -4,10 +4,17 @@ import Link from "next/link";
 const Resume = () => {
   return (
     <>
-      <Link href="/Resume.pdf" target="_blank">
+      <Link
+        href="/Resume.pdf"
+        target="_blank"
+        style={{
+          textDecoration: "none",
+        }}
+      >
         <Button
           variant="outlined"
           disableRipple={true}
+          color="inherit"
           sx={{
             color: "#000D11",
             border: 2,
@@ -15,7 +22,7 @@ const Resume = () => {
             width: 100,
             height: 40,
             "&:hover": {
-              border: 2,
+              bgcolor: "#e9ecef",
             },
           }}
         >
@@ -27,7 +34,7 @@ const Resume = () => {
               fontWeight: "semibold",
             }}
           >
-            RESUME
+            Resume
           </Typography>
         </Button>
       </Link>
