@@ -30,7 +30,7 @@ const Landing = () => {
           },
         }}
       >
-        <ProfileImage />
+        <ProfileImage imagePath="/tiny.png" />
       </Box>
       <Bottom />
     </div>
