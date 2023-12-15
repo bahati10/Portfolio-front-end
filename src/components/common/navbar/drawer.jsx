@@ -3,6 +3,7 @@ import { Drawer, List, ListItem, Button, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   drawerPaper: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   lists: {
-    fontSize: 17,
+    fontSize: 15,
     textTransform: "none",
   },
 }));
@@ -44,79 +45,113 @@ const NavDrawer = ({
     >
       <List>
         <ListItem onClick={handleDrawerClose}>
-          <Button
-            variant="outlined"
-            color="inherit"
-            className={classes.listbutton}
-            sx={{
-              marginTop: -1,
-              borderRadius: 5,
-              border: "none",
-              boxShadow: "none",
+          <Link
+            href="/about"
+            style={{
+              textDecoration: "none",
+              width: "100%",
             }}
           >
-            <Typography variant="h6" className={classes.lists}>
-              About
-            </Typography>
-          </Button>
+            <Button
+              variant="outlined"
+              color="inherit"
+              className={classes.listbutton}
+              sx={{
+                marginTop: -1,
+                borderRadius: 5,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
+              <Typography variant="h6" className={classes.lists}>
+                About
+              </Typography>
+            </Button>
+          </Link>
         </ListItem>
         <ListItem onClick={handleDrawerClose}>
-          <Button
-            variant="outlined"
-            className={classes.listbutton}
-            color="inherit"
-            size="medium"
-            sx={{
-              marginTop: -1,
-              borderRadius: 5,
-              border: "none",
-              boxShadow: "none",
+          <Link
+            href="/skills"
+            style={{
+              textDecoration: "none",
+              width: "100%",
             }}
           >
-            <Typography variant="h6" className={classes.lists}>
-              Skills
-            </Typography>
-          </Button>
+            <Button
+              variant="outlined"
+              className={classes.listbutton}
+              color="inherit"
+              size="medium"
+              sx={{
+                marginTop: -1,
+                borderRadius: 5,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
+              <Typography variant="h6" className={classes.lists}>
+                Skills
+              </Typography>
+            </Button>
+          </Link>
         </ListItem>
         <ListItem onClick={handleDrawerClose}>
-          <Button
-            variant="outlined"
-            className={classes.listbutton}
-            size="medium"
-            color="inherit"
-            elevation={8}
-            sx={{
-              marginTop: -1,
-              borderRadius: 5,
-              border: "none",
-              boxShadow: "none",
+          <Link
+            href="/work"
+            style={{
+              textDecoration: "none",
+              width: "100%",
             }}
           >
-            <Typography variant="h6" className={classes.lists}>
-              Work
-            </Typography>
-          </Button>
+            {" "}
+            <Button
+              variant="outlined"
+              className={classes.listbutton}
+              size="medium"
+              color="inherit"
+              elevation={8}
+              sx={{
+                marginTop: -1,
+                borderRadius: 5,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
+              <Typography variant="h6" className={classes.lists}>
+                Work
+              </Typography>
+            </Button>
+          </Link>
         </ListItem>
         <ListItem onClick={handleDrawerClose}>
-          <Button
-            variant="outlined"
-            className={classes.listbutton}
-            size="medium"
-            color="inherit"
-            elevation={8}
-            sx={{
-              marginTop: -1,
-              display: "flex",
-              alignItems: "center",
-              borderRadius: 5,
-              border: "none",
-              boxShadow: "none",
+          <Link
+            href="/blog"
+            style={{
+              textDecoration: "none",
+              width: "100%",
             }}
           >
-            <Typography variant="h6" className={classes.lists}>
-              Blog
-            </Typography>
-          </Button>
+            {" "}
+            <Button
+              variant="outlined"
+              className={classes.listbutton}
+              size="medium"
+              color="inherit"
+              elevation={8}
+              sx={{
+                marginTop: -1,
+                display: "flex",
+                alignItems: "center",
+                borderRadius: 5,
+                border: "none",
+                boxShadow: "none",
+              }}
+            >
+              <Typography variant="h6" className={classes.lists}>
+                Blog
+              </Typography>
+            </Button>
+          </Link>
         </ListItem>
         <ListItem onClick={handleDrawerClose}>
           <Button

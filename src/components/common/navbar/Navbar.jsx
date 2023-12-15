@@ -82,7 +82,7 @@ const Navbar = () => {
           display: "flex",
           justifyContent: "center",
           backgroundColor: "transparent",
-          backdropFilter: "blur(3px)",
+          backdropFilter: "blur(1.2px)",
         }}
         elevation={0}
       >
@@ -259,8 +259,13 @@ const Navbar = () => {
             </div>
           </Hidden>
         </Toolbar>
-
-        <NavDrawer open={drawerOpen} onClose={handleDrawerClose} />
+        <NavDrawer
+          open={drawerOpen}
+          onClose={handleDrawerClose}
+          handleDrawerClose={handleDrawerClose}
+          handleLightModeClick={handleLightModeClick}
+          isLightMode={isLightMode}
+        />
       </AppBar>
     </div>
   );
