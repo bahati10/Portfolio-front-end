@@ -65,9 +65,9 @@ const Navbar = () => {
       style={{
         flexGrow: 1,
         weight: "100px",
-        height: "100px",
+        height: "60px",
         margin: 5,
-        position: "fixed",
+        position: "relative",
         width: "100%",
         top: 0,
         right: 0,

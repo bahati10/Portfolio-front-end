@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import Link from "next/link";
-import empty from "../../constants/empty.jpg";
 
 const Not = () => {
   return (
@@ -51,7 +50,6 @@ const Not = () => {
                 color: "#005FA2",
               }}
             >
-              {" "}
               Home
             </span>
           </Link>
