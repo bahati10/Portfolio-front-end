@@ -95,6 +95,7 @@ const Navbar = () => {
           >
             <Typography
               variant="h5"
+              component="h5"
               sx={{
                 fontSize: "clamp(20px, 4vw, 26px)",
               }}
