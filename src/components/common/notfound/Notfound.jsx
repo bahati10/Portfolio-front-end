@@ -39,7 +39,22 @@ const Not = () => {
             wordSpacing: 3,
           }}
         >
-          Page Not found
+          Page Not found Go
+          <Link
+            href="/"
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <span
+              style={{
+                color: "#005FA2",
+              }}
+            >
+              {" "}
+              Home
+            </span>
+          </Link>
         </Typography>
       </div>
     </div>
