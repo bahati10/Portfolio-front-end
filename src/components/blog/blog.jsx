@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import BlogPaper from "./blogPaper";
+import SearchBar from "./searchbar/search";
 
 const Blogging = () => {
   return (
@@ -10,29 +11,30 @@ const Blogging = () => {
         maxHeight: "100vh",
       }}
     >
+      <SearchBar />
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          flexGrow: 3,
-          "& > :not(style)": {
-            m: 1,
-            width: {
-              xs: 700,
-              sm: 700,
-              md: 700,
-              lg: 700,
-              xl: 700,
-            },
-            height: {
-              xs: 500,
-              sm: 500,
-              md: 500,
-              lg: 500,
-              xl: 500,
-            },
-          },
+          m: 2,
+          // "& > :not(style)": {
+          //   m: 2.5,
+          //   width: {
+          //     xs: 500,
+          //     sm: 500,
+          //     md: 500,
+          //     lg: 500,
+          //     xl: 500,
+          //   },
+          //   height: {
+          //     xs: 500,
+          //     sm: 500,
+          //     md: 500,
+          //     lg: 500,
+          //     xl: 500,
+          //   },
+          // },
         }}
       >
         <BlogPaper />
