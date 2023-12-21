@@ -11,7 +11,7 @@ import NavDrawer from "./drawer";
 
 const useStyles = makeStyles((theme) => ({
   drawerPaper: {
-    width: 230,
+    width: 200,
   },
   menubutton: {
     "&:hover": {
@@ -66,9 +66,8 @@ const Navbar = () => {
         flexGrow: 1,
         weight: "100px",
         height: "60px",
-        margin: 5,
+        marginBottom: "30px",
         position: "relative",
-        width: "100%",
         top: 0,
         right: 0,
         zIndex: 1100,

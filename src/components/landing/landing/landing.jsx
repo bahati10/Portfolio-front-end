@@ -18,16 +18,12 @@ const Landing = () => {
           border: 3,
           width: "100%",
           height: "100%",
-          maxWidth: "140px",
-          maxHeight: "140px",
+          maxWidth: "120px",
+          maxHeight: "120px",
           textAlign: "center",
           position: "relative",
           borderRadius: "100%",
           overflow: "hidden",
-          "@media (max-width: 600px)": {
-            maxWidth: "150px",
-            maxHeight: "150px",
-          },
         }}
       >
         <ProfileImage imagePath="/tiny.png" />

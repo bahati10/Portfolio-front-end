@@ -3,7 +3,13 @@ import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 const BlogPaper = () => {
   return (
-    <Card sx={{ maxWidth: 600 }}>
+    <Card
+      sx={{
+        borderRadius: 2,
+        margin: "10px",
+        maxWidth: "500px",
+      }}
+    >
       <CardMedia
         sx={{ height: 300, objectFit: "cover" }}
         image="/empty.jpg"
