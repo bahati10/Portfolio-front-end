@@ -18,7 +18,7 @@ const BlogImage = () => {
       }}
     >
       <Image
-        src="/empty.jpg"
+        src="/crystals.jpg"
         alt="Bahati Yves photo"
         layout="fill"
         objectFit="cover"
