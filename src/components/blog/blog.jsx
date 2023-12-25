@@ -42,8 +42,6 @@ const Blogging = () => {
         <BlogPaper />
         <BlogPaper />
         <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
       </Box>
     </div>
   );
