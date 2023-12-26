@@ -6,7 +6,7 @@ const theme = createTheme({
       main: "#EEE5E9",
     },
     secondary: {
-      main: "#78BC61",
+      main: "#000D11",
     },
   },
   background: {
@@ -15,8 +15,15 @@ const theme = createTheme({
     },
   },
   typography: {
+    h4: {
+      fontFamily: "Roboto",
+      color: "#000D11",
+      fontSize: 26,
+      fontWeight: 600,
+    },
     h5: {
-      fontFamily: "Righteous",
+      fontFamily: "Roboto",
+      fontWeight: 450,
       color: "#000D11",
     },
     h6: {
@@ -25,6 +32,12 @@ const theme = createTheme({
       fontSize: 14.5,
       fontWeight: 600,
       wordSpacing: 2,
+    },
+    body2: {
+      fontFamily: "Roboto",
+      fontSize: 15,
+      fontWeight: "regular",
+      letterSpacing: -0.3,
     },
   },
 });

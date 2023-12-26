@@ -1,6 +1,8 @@
-import { Box } from "@mui/material";
+import React from "react";
+import { Box, Grid } from "@mui/material";
 import BlogPaper from "./blogPaper";
 import SearchBar from "./searchbar/search";
+import Link from "next/link";
 
 const Blogging = () => {
   return (
@@ -17,33 +19,43 @@ const Blogging = () => {
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          m: 2,
-          // "& > :not(style)": {
-          //   m: 2.5,
-          //   width: {
-          //     xs: 500,
-          //     sm: 500,
-          //     md: 500,
-          //     lg: 500,
-          //     xl: 500,
-          //   },
-          //   height: {
-          //     xs: 500,
-          //     sm: 500,
-          //     md: 500,
-          //     lg: 500,
-          //     xl: 500,
-          //   },
-          // },
+          gap: "30px",
+          padding: "16px",
+          textDecoration: "none",
         }}
       >
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
       </Box>
     </div>
   );
