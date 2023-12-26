@@ -212,7 +212,7 @@ const Navbar = () => {
               >
                 <Typography variant="h6" style={{ textTransform: "none" }}>
                   <Link
-                    href="/Blog"
+                    href="/blog"
                     style={{
                       textDecoration: "none",
                       color: "#000D11",
