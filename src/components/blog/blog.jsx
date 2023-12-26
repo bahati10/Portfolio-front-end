@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid } from "@mui/material";
 import BlogPaper from "./blogPaper";
 import SearchBar from "./searchbar/search";
+import Link from "next/link";
 
 const Blogging = () => {
   return (
@@ -18,15 +19,43 @@ const Blogging = () => {
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          gap: "30px", // Adjust the space between cards
-          padding: "16px", // Add padding for space on the sides
+          gap: "30px",
+          padding: "16px",
+          textDecoration: "none",
         }}
       >
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
-        <BlogPaper />
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
+        <Link
+          href="/single"
+          style={{
+            textDecoration: "none",
+          }}
+        >
+          <BlogPaper />
+        </Link>
       </Box>
     </div>
   );
