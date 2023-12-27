@@ -16,7 +16,7 @@ const BlogPaper = () => {
         title="black sand"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h7" component="div">
           Black sand
         </Typography>
         <Typography variant="body2" color="text.secondary">
