@@ -17,7 +17,7 @@ const theme = createTheme({
   typography: {
     h3: {
       fontFamily: "Poppins",
-      fontSize: "32px",
+      fontSize: "34px",
       fontWeight: 600,
       color: "#000D11",
     },
@@ -38,6 +38,12 @@ const theme = createTheme({
       fontSize: 20,
       color: "#000D11",
     },
+    h7: {
+      fontFamily: "Roboto",
+      fontWeight: 450,
+      fontSize: 20,
+      color: "#000D11",
+    },
     h6: {
       fontFamily: "Poppins",
       color: "#000D11",
@@ -49,7 +55,7 @@ const theme = createTheme({
       fontFamily: "Poppins",
       color: "#000D11",
       fontSize: 16.5,
-      fontWeight: "regular",
+      fontWeight: "Regular",
       letterSpacing: -0.3,
     },
   },
