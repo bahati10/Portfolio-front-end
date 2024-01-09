@@ -28,7 +28,14 @@ const theme = createTheme({
       fontWeight: 600,
     },
     h5: {
-      fontFamily: "Righteous",
+      fontFamily: "Roboto",
+      fontWeight: 450,
+      color: "#000D11",
+    },
+    h7: {
+      fontFamily: "Roboto",
+      fontWeight: 450,
+      fontSize: 20,
       color: "#000D11",
     },
     h7: {
